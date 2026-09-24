@@ -1,134 +1,43 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-  <meta name="google-site-verification" content="xDNWUvx6Q5EWK5YYSyKvK8DZTmvXhKsGX203Ll-BFFE" >	
-  <meta name=viewport content=“width=800”>
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <style type="text/css">
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300);
-  /* @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons); */
-    /* Color scheme stolen from Sergey Karayev */
-    a {
-    /*color: #b60a1c;*/
-    color: #1772d0;
-    /*color: #bd0a36;*/
-    text-decoration:none;
-    }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
-    }
-    body,td,th,tr,p,a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    }
-    strong {
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-    /*font-family: 'Avenir Next';*/
-    font-size: 15px;
-    font-weight: 400;
-    }
-    heading {
-    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Avenir Next';*/
-    /*src: url("./fonts/Roboto_Mono_for_Powerline.ttf");*/
-    font-size: 24px;
-    font-weight: 400;
-    }
-    papertitle {
-    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Avenir Next';*/
-    /*src: url("./fonts/Roboto_Mono_for_Powerline.ttf");*/
-    font-size: 15px;
-    font-weight:500;
-    cursor: pointer;
-    }
-    papertitle:hover {
-    color: #1976D2;
-    }
-    name {
-    /*font-family: 'Lato', Verdana, Helvetica, sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Avenir Next';*/
-    font-weight: 400;
-    font-size: 32px;
-    }
-    .one
-    {
-    width: 160px;
-    height: 140px;
-    position: relative;
-    }
-    .two
-    {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
-    }
-    span.highlight {
-        background-color: #ffffd0;
-    }
-    /* Updated base styles */
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="xDNWUvx6Q5EWK5YYSyKvK8DZTmvXhKsGX203Ll-BFFE" >
+  <meta name="viewport" content="width=800">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500);
     body {
-      line-height: 1.6;
+      font: 300 16px/1.6 'Roboto', sans-serif;
       color: #2c3e50;
-      background-color: #fafafa;
+      background: #fafafa;
     }
-
     a {
-      color: #2196F3;
+      color: #2196f3;
+      text-decoration: none;
       transition: color 0.2s ease;
     }
-    
-    a:focus, a:hover {
-      color: #1976D2;
-    }
-
-    body,td,th,tr,p,a {
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.6;
-    }
-
-    name {
-      font-size: 38px;
-      font-weight: 500;
-      color: #000000;
+    a:focus, a:hover, .paper-title:hover { color: #1976d2; }
+    strong { font-size: 15px; font-weight: 400; }
+    .name, .heading, .paper-title { color: #000; font-weight: 500; }
+    .name {
       display: block;
       margin-bottom: 20px;
+      font-size: 38px;
     }
-
-    heading {
-      font-size: 28px;
-      font-weight: 500;
-      color: #000000;
+    .heading {
       display: block;
       margin: 30px 0 20px;
       padding-bottom: 10px;
       border-bottom: 2px solid #e0e0e0;
+      font-size: 28px;
     }
-
-    papertitle {
-      font-size: 16px;
-      font-weight: 500;
-      color: #000000;
-    }
-
-    table[cellpadding="10"] {
+    .paper-title { cursor: pointer; }
+    table { width: 100%; border-spacing: 0; margin: 0 auto; }
+    td { padding: 0; }
+    .page { width: 800px; }
+    .section > tbody > tr > td { padding: 20px; }
+    .card > tbody > tr > td { padding: 10px; vertical-align: top; }
+    .card {
       background: white;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -136,117 +45,81 @@
       padding: 15px;
       transition: transform 0.2s ease;
     }
-
-    table[cellpadding="10"]:hover {
+    .card:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
     img[alt="headshot"] {
+      margin-bottom: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-
     p[align="center"] a {
       display: inline-block;
       padding: 5px 10px;
       border-radius: 4px;
       transition: background-color 0.2s ease;
     }
-
-    p[align="center"] a:hover {
-      background-color: #f5f5f5;
-    }
-
-    span[style*="color:#ff0000"] {
-      color: #f44336 !important;
-      font-weight: 400;
-      padding: 2px 5px;
-      background-color: #ffebee;
-      border-radius: 4px;
-    }
+    p[align="center"] a:hover { background: #f5f5f5; }
   </style>
-  <!-- <link rel="icon" type="image/png" href="media/preview.jpg"> -->
   <title>Jinyuan Shao - Homepage</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <script src="script/functions.js"></script>
   </head>
   <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+  <table class="page">
     <tr>
     <td>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <!--<tr onmouseout="headshot_stop()" onmouseover="headshot_start()">-->
+      <table class="section">
       <tr>
         <td width="67%" valign="middle">
         <p align="center">
-          <name>Jinyuan Shao 邵金圆 </name>
+          <span class="name">Jinyuan Shao 邵金圆 </span>
         </p>
         <p align="justify">
           I received my PhD from <a href="https://www.purdue.edu/">Purdue University</a> and my M.S. from the <a href="https://english.cas.cn/">Chinese Academy of Sciences</a>.
-        </p>  
+        </p>
         <p align="justify">
           During my PhD, I first introduced the concepts of <a href="https://arxiv.org/abs/2605.02201">super-resolution</a> and <a href="https://doi.org/10.1016/j.rse.2026.115246">understory removal</a> for forest LiDAR point cloud processing.
         </p>
         <p align="justify">
           Please feel free to reach out if you have any questions about my research or are interested in potential collaborations.
         </p>
-        <p align=center>
-          <a href="mailto:jyshao@purdue.edu">Email</a> &nbsp|&nbsp
-          <a href="files/CV.pdf">CV</a> &nbsp|&nbsp
-          <a href="https://github.com/JinyuanShao">GitHub</a> &nbsp|&nbsp
-          <a href="https://scholar.google.com/citations?user=I6HeggYAAAAJ&hl=en">Google Scholar</a> &nbsp|&nbsp
+        <p align="center">
+          <a href="mailto:jyshao@purdue.edu">Email</a> &nbsp;|&nbsp;
+          <a href="files/CV.pdf">CV</a> &nbsp;|&nbsp;
+          <a href="https://github.com/JinyuanShao">GitHub</a> &nbsp;|&nbsp;
+          <a href="https://scholar.google.com/citations?user=I6HeggYAAAAJ&hl=en">Google Scholar</a> &nbsp;|&nbsp;
           <a href="https://www.linkedin.com/in/jinyuan-shao/"> LinkedIn</a>
-          <!-- <a href="https://twitter.com/jyshao30">Twitter</a> -->
         </p>
         </td>
         <td width="33%">
-          <img src="media/headshot.jpeg" width="250" alt="headshot" style="margin-bottom: 20px;">
-
-          <!--<div class="one">
-          <div class="two" id="headshot_image"><img src="media/color_headshot.png" width="250" alt="headshot"></div>
-          <img src="media/bw_headshot.png" width="250" alt="headshot">
-          </div>
-          <script type="text/javascript">
-          function headshot_start() {
-          document.getElementById('headshot_image').style.opacity = "1";
-          }
-          function headshot_stop() {
-          document.getElementById('headshot_image').style.opacity = "0";
-          }
-          filters_stop()
-          </script>-->
+          <img src="media/headshot.jpeg" width="250" alt="headshot">
         </td>
-        <!--<td width="33%">
-        <img src="media/bw_headshot.png" width="250">
-        <img src="media/color_headshot.png" width="250">
-        </td>-->
       </tr>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      </table>
+      <table class="section">
         <tr>
           <td width="100%" valign="middle">
-            <heading>News</heading>
+            <span class="heading">News</span>
           </td>
         </tr>
       </table>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <table class="card">
         <tr>
-          <td valign="top">
+          <td>
             <p align="justify">
               <strong>Jan 2026:</strong> 📜 <a href="https://doi.org/10.1016/j.rse.2026.115246">One paper</a> has been accepted for publication by Remote Sensing of Environment!
             </p>
           </td>
         </tr>
         <tr>
-          <td valign="top">
+          <td>
             <p align="justify">
               <strong>Sep 2025:</strong> 🌟 I was selected as the Purdue Ag Graduate Spotlight of September! (<a href="https://ag.purdue.edu/news/department/arge/2025/09/graduate-spotlight-shao.html">Article</a>)
             </p>
           </td>
         </tr>
         <tr>
-          <td valign="top">
+          <td>
             <p align="justify">
               <strong>Jan 2025:</strong> 🏆 Win the first place in <a href="https://www.asprs.org/archives/2024-annual-geochallenge.html">ASPRS 2024 GeoChallenge</a> as the team leader!
               (<a href="https://www.linkedin.com/posts/asprs_congratulations-to-the-winners-of-the-activity-7276978256619126785-bwH6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADuaIg0BypEmfcUb7qalteetzLNvvBEUcYE">Announcement</a>;
@@ -255,25 +128,25 @@
           </td>
         </tr>
       </table>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <table class="section">
         <tr>
           <td width="100%" valign="middle">
-            <heading>Research</heading>
+            <span class="heading">Research</span>
           </td>
         </tr>
       </table>
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+    <table class="card">
       <tr>
           <td align="center">
             <img src='media/ModelArchitecture.png' width="700">
           </td>
       </tr>
       <tr>
-          <td valign="top">
+          <td>
               <a href="https://arxiv.org/abs/2605.02201">
-                  <papertitle>
+                  <span class="paper-title">
                     Super-Resolution of Airborne Laser Scanning Point Clouds for Forest Inventory
-                  </papertitle>
+                  </span>
               </a>
               <br>
               <strong>Jinyuan Shao</strong>,
@@ -288,18 +161,18 @@
           </td>
       </tr>
     </table>
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+    <table class="card">
       <tr>
           <td align="center">
             <img src='media/RSE_short.png' width="700">
           </td>
       </tr>
       <tr>
-          <td valign="top">
+          <td>
               <a href="https://doi.org/10.1016/j.rse.2026.115246">
-                  <papertitle>
+                  <span class="paper-title">
                     A three-stage framework for stand-level automated stem volume estimation in temperate forests using mobile laser scanning
-                  </papertitle>
+                  </span>
               </a>
               <br>
               <strong>Jinyuan Shao</strong>,
@@ -316,18 +189,18 @@
           </td>
       </tr>
     </table>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <table class="card">
       <tr>
           <td align="center">
             <img src='media/framework.png' width="700">
           </td>
       </tr>
       <tr>
-          <td valign="top">
+          <td>
               <a href="https://www.sciencedirect.com/science/article/pii/S266601722400052X">
-                  <papertitle>
+                  <span class="paper-title">
                     Large-scale inventory in natural forests with mobile LiDAR point clouds
-                  </papertitle>
+                  </span>
               </a>
               <br>
               <strong>Jinyuan Shao</strong>,
@@ -345,18 +218,18 @@
           </td>
       </tr>
     </table>
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+    <table class="card">
       <tr>
           <td align="center">
             <img src='media/igarss2023.png' width="700">
           </td>
       </tr>
       <tr>
-          <td valign="top">
+          <td>
               <a href="https://ieeexplore.ieee.org/abstract/document/10281558">
-                  <papertitle>
+                  <span class="paper-title">
                       Radiometric and Geometric Approch for Major Woody Parts Segmentation in Forests LiDAR Point Clouds
-                  </papertitle>
+                  </span>
               </a>
               <br>
               <strong>Jinyuan Shao</strong>,
@@ -369,24 +242,21 @@
               <em>IEEE International Geoscience and Remote Sensing Sypossium (<strong>IGARSS</strong>)</em>, 2023
               <br>
               <a href="files/IGARSS_poster_JinyuanShao.pdf">poster</a>
-              <!-- <p></p>
-              An unsupervised method for major wood segmentation combining radiometric and geometric features from LiDAR point clouds.
-              <p></p> -->
           </td>
       </tr>
     </table>
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+    <table class="card">
       <tr>
           <td align="center">
             <img src='media/SNUNet-CD.png' width="700">
           </td>
       </tr>
       <tr>
-          <td valign="top">
+          <td>
               <a href="https://ieeexplore.ieee.org/abstract/document/9355573">
-                  <papertitle>
+                  <span class="paper-title">
                     SNUNet-CD: A Densely Connected Siamese Network for Change Detection of VHR Images
-                  </papertitle>
+                  </span>
               </a>
               <br>
               <a>Sheng Fang</a>,
@@ -397,9 +267,6 @@
               <em>IEEE Geoscience and Remote Sensing Letters (<strong>IEEE GRSL</strong>)</em>, 2021
               <br>
               <a href="https://github.com/likyoo/Siam-NestedUNet">code</a>
-              <!-- <p></p>
-              A densely connected siamese netwrok for remote sensing change detection.
-              <p></p> -->
           </td>
       </tr>
     </table>
