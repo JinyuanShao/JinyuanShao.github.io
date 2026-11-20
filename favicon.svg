@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0b0b0c"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="11" fill="none" stroke="#CFB991" stroke-width="2.2"/>
+  <!-- Unlit matrix dots -->
+  <g fill="#24211c">
+    <!-- J background -->
+    <circle cx="11" cy="15.5" r="1.2"/>
+    <circle cx="11" cy="21" r="1.2"/><circle cx="16.5" cy="21" r="1.2"/><circle cx="22" cy="21" r="1.2"/>
+    <circle cx="11" cy="26.5" r="1.2"/><circle cx="16.5" cy="26.5" r="1.2"/><circle cx="22" cy="26.5" r="1.2"/>
+    <circle cx="11" cy="32" r="1.2"/><circle cx="16.5" cy="32" r="1.2"/><circle cx="22" cy="32" r="1.2"/>
+    <circle cx="11" cy="37.5" r="1.2"/><circle cx="16.5" cy="37.5" r="1.2"/><circle cx="22" cy="37.5" r="1.2"/>
+    <circle cx="16.5" cy="43" r="1.2"/><circle cx="22" cy="43" r="1.2"/>
+    <circle cx="11" cy="48.5" r="1.2"/><circle cx="27.5" cy="48.5" r="1.2"/>
+    <!-- S background -->
+    <circle cx="36.5" cy="15.5" r="1.2"/>
+    <circle cx="42" cy="21" r="1.2"/><circle cx="47.5" cy="21" r="1.2"/><circle cx="53" cy="21" r="1.2"/>
+    <circle cx="42" cy="26.5" r="1.2"/><circle cx="47.5" cy="26.5" r="1.2"/><circle cx="53" cy="26.5" r="1.2"/>
+    <circle cx="36.5" cy="32" r="1.2"/><circle cx="53" cy="32" r="1.2"/>
+    <circle cx="36.5" cy="37.5" r="1.2"/><circle cx="42" cy="37.5" r="1.2"/><circle cx="47.5" cy="37.5" r="1.2"/>
+    <circle cx="36.5" cy="43" r="1.2"/><circle cx="42" cy="43" r="1.2"/><circle cx="47.5" cy="43" r="1.2"/>
+    <circle cx="53" cy="48.5" r="1.2"/>
+  </g>
+  <!-- Lit Purdue Gold LEDs: JS -->
+  <g fill="#DDB945">
+    <!-- J -->
+    <circle cx="16.5" cy="15.5" r="2.25"/><circle cx="22" cy="15.5" r="2.25"/><circle cx="27.5" cy="15.5" r="2.25"/>
+    <circle cx="27.5" cy="21" r="2.25"/>
+    <circle cx="27.5" cy="26.5" r="2.25"/>
+    <circle cx="27.5" cy="32" r="2.25"/>
+    <circle cx="27.5" cy="37.5" r="2.25"/>
+    <circle cx="11" cy="43" r="2.25"/><circle cx="27.5" cy="43" r="2.25"/>
+    <circle cx="16.5" cy="48.5" r="2.25"/><circle cx="22" cy="48.5" r="2.25"/>
+    <!-- S -->
+    <circle cx="42" cy="15.5" r="2.25"/><circle cx="47.5" cy="15.5" r="2.25"/><circle cx="53" cy="15.5" r="2.25"/>
+    <circle cx="36.5" cy="21" r="2.25"/>
+    <circle cx="36.5" cy="26.5" r="2.25"/>
+    <circle cx="42" cy="32" r="2.25"/><circle cx="47.5" cy="32" r="2.25"/>
+    <circle cx="53" cy="37.5" r="2.25"/>
+    <circle cx="53" cy="43" r="2.25"/>
+    <circle cx="36.5" cy="48.5" r="2.25"/><circle cx="42" cy="48.5" r="2.25"/><circle cx="47.5" cy="48.5" r="2.25"/>
+  </g>
+</svg>
